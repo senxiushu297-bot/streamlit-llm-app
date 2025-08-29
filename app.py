@@ -10,15 +10,15 @@ Streamlit × LangChain サンプル
 
 import os
 import streamlit as st
-from dotenv import load_dotenv
-from langchain_openai import ChatOpenAI
+#from dotenv import load_dotenv
+from langchain.chat_models import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
 # ----------------------------
 # .env 読み込み
 # ----------------------------
-load_dotenv()
+#load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 
 if not api_key:
